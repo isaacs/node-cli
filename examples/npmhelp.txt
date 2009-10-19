@@ -1,0 +1,50 @@
+npm - The Node Package Manager
+usage: npm [npm-options] <command>
+[npm-options]          Options to be passed to the npm program itself
+
+   -d --dry-run        Don't do anything real
+
+   -h --help           Show this message
+
+   -v --verbose        Show more ouput
+
+<command>              The thing you want npm to do
+
+   install <package> [install-options]
+                       Install a package
+
+       <package>       The package to install
+
+       [install-options]
+                       
+
+           -b --branch ( stable | edge | nightly )
+                       The branch to install
+
+           -f --force  Install even if requirements are not met.
+
+           -v --version <version>
+                       Which specific version to install
+
+   set <package> [ <setting> [...]]
+                       Manage package configurations
+
+       <package>       The package to update or view settings on
+
+       <setting>       A set of either 'key=value' pairs or just key names. Keys without values are displayed with their current values. If no keys are specified, then all settings for the package are printed.
+
+   remove <package> [remove-options]
+                       Remove a package
+
+       <package>       The package to remove
+
+       [remove-options]
+
+           -f --force  Remove even if it would break something else
+
+           -c --cleanupRemove packages installed as dependencies which are no longer needed
+
+   ( start | stop | restart ) <package>
+                       Execute package start/stop/restart commands
+
+       <package>       The package to start, stop, or restart.
